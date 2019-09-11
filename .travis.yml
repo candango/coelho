@@ -1,0 +1,9 @@
+# https://travis-ci.org/candango/coelho
+language: python
+python:
+  - "3.5"
+  - "3.6"
+install:
+  - "pip install -r requirements.txt"
+script:
+  - "PYTHONPATH=$PYTHONPATH:. python tests/runtests.py"

@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 #
-# Copyright 2019 Flavio Garcia
+# Copyright 2019-2020 Flavio Garcia
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -49,18 +49,19 @@ setup(
     version=coelho.get_version(),
     description="Candango Coelho AMPQ Toolkit",
     long_description=read("README.md"),
-    license="Apache License V2.0",
-    author="Flavio Garcia",
-    author_email="piraz@candango.org",
-    maintainer="Flavio Garcia",
-    maintainer_email="piraz@candango.org",
+    long_description_content_type="text/markdown",
+    license=coelho.__licence__,
+    author=coelho.get_author(),
+    author_email=coelho.get_author_email(),
+    maintainer=coelho.get_author(),
+    maintainer_email=coelho.get_author_email(),
     install_requires=resolve_requires("requirements.txt"),
     url="https://github.com/candango/coelho",
     packages=find_packages(),
     package_dir={'coelho': "coelho"},
     include_package_data=True,
     classifiers=[
-        "Development Status :: 1 - Planning",
+        "Development Status :: 2 - Pre-Alpha",
         "Environment :: Console",
         "Environment :: Web Environment",
         "License :: OSI Approved :: Apache Software License",
